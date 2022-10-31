@@ -6,7 +6,7 @@ import {
 const Header = () => {
     return (
         
-<nav className="navbar navbar-expand-lg" >
+<nav className=" navbar navbar-expand-lg" >
   <div className=" container container-fluid">
     <Link className="navbar-brand " to="/">Emo Place</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,7 @@ const Header = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
         </li>
+        
         <li className="nav-item">
           <Link className="nav-link" to="/explore">Explore</Link>
         </li>
@@ -36,8 +37,14 @@ const Header = () => {
         </li>
         <li className="nav-item">
             
-        <button className="nav-link nav-btn btn btn-primary" to="/wallet">Connect Wallet</button>
+        <Link to="/wallet">
+     <button className="nav-link nav-btn btn btn-primary" type="button">
+     Connect Wallet
+     </button>
+ </Link>
           </li>
+
+       
        
 
       </ul>

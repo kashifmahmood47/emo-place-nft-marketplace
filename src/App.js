@@ -3,10 +3,12 @@ import Footer from './MyComponents/Footer';
 import HomeHero from './MyComponents/HomeHero';
 import Header from './MyComponents/Header';
 import Collections from './MyComponents/Collections';
-import About from './MyComponents/About';
+import About from './Frontend/About';
 import Products from './MyComponents/Products';
-import Contact from './MyComponents/Contact';
-import Explore from './MyComponents/Explore';
+import Contact from './Frontend/Contact';
+import Explore from './Frontend/Explore';
+import Wallet from './Frontend/Wallet'
+import UserDashboard from './UserPanel/UserDashboard'
 // import Newsfeed from './MyComponents/Newsfeed';
 
 import {
@@ -68,6 +70,10 @@ function App() {
           element={<Explore />}/>
           {/* <Route exact path="/newsfeed"
           element={<Newsfeed />}/> */}
+          <Route exact path="/wallet"
+          element={<Wallet />}/>
+           <Route exact path="/user-dashboard"
+          element={<UserDashboard />}/>
          
 
 

@@ -9,81 +9,94 @@ import Contact from './Frontend/Contact';
 import Explore from './Frontend/Explore';
 import Wallet from './Frontend/Wallet'
 import UserDashboard from './UserPanel/UserDashboard'
+import Mints from './UserPanel/Mints'
+import OrdersPlaced from './UserPanel/OrdersPlaced'
+import Logout from './UserPanel/Logout';
+import OrdersReceived from './UserPanel/OrdersReceived'
+import Profile from './UserPanel/Profile'
 // import Newsfeed from './MyComponents/Newsfeed';
 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  
+
 } from "react-router-dom";
 document.title = "Emo Place - NFT Marketplace; Connecting Emotions"
 
 function App() {
-  
+
   var productsArrayApp = [
     { productTitle: 'White Bored Ape', productPrice: 100, productImage: 'https://i.guim.co.uk/img/media/ef8492feb3715ed4de705727d9f513c168a8b196/37_0_1125_675/master/1125.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d456a2af571d980d8b2985472c262b31', productUser: 'kashif', productLikes: '10', },
-    { productTitle: 'Golden Bored Ape', productPrice: 100, productImage: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/7GBCHQUCEROJDPEVYQW7XG7VAE.jpg', productUser: 'kashif', productLikes: '2', }, 
+    { productTitle: 'Golden Bored Ape', productPrice: 100, productImage: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/7GBCHQUCEROJDPEVYQW7XG7VAE.jpg', productUser: 'kashif', productLikes: '2', },
     { productTitle: 'Black Bored Ape', productPrice: 100, productImage: 'https://i.pinimg.com/736x/d8/a7/06/d8a706b3ecef2b46ce339cd1957b1d59.jpg', productUser: 'kashif', productLikes: '10', },
     { productTitle: 'VR Bored Ape', productPrice: 100, productImage: 'https://img.freepik.com/premium-vector/hand-drawn-monkey-ape-vr-box-virtual-nft-style_361671-246.jpg?w=2000', productUser: 'kashif', productLikes: '1', },
     { productTitle: 'White Bored Ape', productPrice: 100, productImage: 'https://i.guim.co.uk/img/media/ef8492feb3715ed4de705727d9f513c168a8b196/37_0_1125_675/master/1125.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d456a2af571d980d8b2985472c262b31', productUser: 'kashif', productLikes: '8', },
-    { productTitle: 'Golden Bored Ape', productPrice: 100, productImage: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/7GBCHQUCEROJDPEVYQW7XG7VAE.jpg', productUser: 'kashif', productLikes: '4', }, 
+    { productTitle: 'Golden Bored Ape', productPrice: 100, productImage: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/7GBCHQUCEROJDPEVYQW7XG7VAE.jpg', productUser: 'kashif', productLikes: '4', },
     { productTitle: 'Black Bored Ape', productPrice: 100, productImage: 'https://i.pinimg.com/736x/d8/a7/06/d8a706b3ecef2b46ce339cd1957b1d59.jpg', productUser: 'kashif', productLikes: '10', },
-    { productTitle: 'VR Bored Ape', productPrice: 100, productImage: 'https://img.freepik.com/premium-vector/hand-drawn-monkey-ape-vr-box-virtual-nft-style_361671-246.jpg?w=2000', productUser: 'kashif', productLikes: '10', },
-    
-    
+    { productTitle: 'VR Bored Ape', productPrice: 100, productImage: 'https://img.freepik.com/premium-vector/hand-drawn-monkey-ape-vr-box-virtual-nft-style_361671-246.jpg?w=2000', productUser: 'kashif', productLikes: '8', },
+    { productTitle: 'White Bored Ape', productPrice: 100, productImage: 'https://i.guim.co.uk/img/media/ef8492feb3715ed4de705727d9f513c168a8b196/37_0_1125_675/master/1125.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d456a2af571d980d8b2985472c262b31', productUser: 'kashif', productLikes: '8', },
+    { productTitle: 'Golden Bored Ape', productPrice: 100, productImage: 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/7GBCHQUCEROJDPEVYQW7XG7VAE.jpg', productUser: 'kashif', productLikes: '4', },
+    { productTitle: 'Black Bored Ape', productPrice: 100, productImage: 'https://i.pinimg.com/736x/d8/a7/06/d8a706b3ecef2b46ce339cd1957b1d59.jpg', productUser: 'kashif', productLikes: '10', },
+    { productTitle: 'VR Bored Ape', productPrice: 100, productImage: 'https://img.freepik.com/premium-vector/hand-drawn-monkey-ape-vr-box-virtual-nft-style_361671-246.jpg?w=2000', productUser: 'kashif', productLikes: '8', },
+
+
   ];
 
   return (
 
     <div className="App">
-    <Router>
+      <Router>
 
-      
-        <Header/>
-        
+
+        <Header />
+
         <Routes>
-{/* 
-          <Route exact path="/" render={() => {
-            return (
-              <div>
-                <Slider />
-                <AddTodo addTodo={addTodo} />
-                <Todos todoEl={todoEl} onDelete={onDelete} />
-              </div>
-            )
-          }}>
-          </Route> */}
-           <Route exact path="/"
-          element={<div>
-             <HomeHero />
-      <Collections />
-      <Products title="Top Trendings" productsArray={productsArrayApp} pquantityOfNfts= {8}/>
-          </div>}/>
+
+          <Route exact path="/"
+            element={<div>
+              <HomeHero />
+              <Collections />
+              <Products title="Top Trendings" productsArray={productsArrayApp} pquantityOfNfts={8} />
+            </div>} />
           <Route exact path="/about"
-          element={<About />}/>
+            element={<About />} />
           <Route exact path="/collections"
-          element={<Collections />}/>
+            element={<Collections />} />
           <Route exact path="/contact"
-          element={<Contact />}/>
+            element={<Contact />} />
           <Route exact path="/explore"
-          element={<Explore />}/>
+            element={<Explore />} />
           {/* <Route exact path="/newsfeed"
           element={<Newsfeed />}/> */}
           <Route exact path="/wallet"
-          element={<Wallet />}/>
-           <Route exact path="/user-dashboard"
-          element={<UserDashboard />}/>
-         
+            element={<Wallet />} />
+          <Route exact path="/user-dashboard"
+            element={<UserDashboard />} />
+          <Route exact path="/user-dashboard/mints"
+            element={<Mints />} />
+<Route exact path="/user-dashboard/orders-placed"
+            element={<OrdersPlaced />} />
+            <Route exact path="/user-dashboard/orders-received"
+            element={<OrdersReceived />} />
+             <Route exact path="/user-dashboard/profile"
+            element={<Profile />} />
+
+<Route exact path="/user-dashboard/logout"
+            element={<Logout />} />
+
+
+
+
 
 
         </Routes>
 
         <Footer />
 
-      
 
-    </Router></div>
+
+      </Router></div>
     // <div className="App">
     //   <Header />
     //   <HomeHero />
@@ -91,7 +104,7 @@ function App() {
     //   <Products title="Latest NFTs" productsArray={productsArrayApp} pquantityOfNfts= {8}/>
     //   <Footer />
 
-    // </div>
+ 
   );
 }
 

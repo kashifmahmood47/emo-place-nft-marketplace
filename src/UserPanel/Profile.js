@@ -1,21 +1,20 @@
 import React from 'react'
-import './UserDashboard.css'
-
 import UserSidebar from './Components/UserSidebar'
-
-const UserDashboard = () => {
-    return (
-        <div className="container user-dashboard-page">
+const Profile = () => {
+  return (
+    <div>
+       <div className="container user-dashboard-page">
             <div className=" user-sidebar">
                 <UserSidebar />
 
             </div>
             <div className="user-main">
             
-Dashboard and analytics will show here
+Edit profile will show here
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
-export default UserDashboard
+export default Profile

@@ -25,9 +25,9 @@ const ProductItem = (props) => {
   <p>${props.productArrayItem.productPrice }</p>
   <p>Publisher <b><i>@{props.productArrayItem.productUser}</i></b></p>
   </div>
-  
+  <p>{props.productArrayItem.productDescription}</p>
   <div className="pi-btns">
-  <button className="btn btn-success pi-btns-p">Show Details </button>
+  <button className="btn btn-success pi-btns-p">Buy Now </button>
   <button className="btn btn-primary pi-btns-p">{props.productArrayItem.productLikes}<AiOutlineLike/> </button>
   </div>
   </div>

@@ -38,7 +38,10 @@ const Contact = () => {
     </div>
   </div>
 </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.63572751083!2d73.07903012566814!3d33.650127545155634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952e017d0acd%3A0xf20be4a76782ceaf!2sPir%20Mehr%20Ali%20Shah%20Arid%20Agriculture%20University%20-%20PMAS%20AAUR!5e0!3m2!1sen!2sus!4v1666956975991!5m2!1sen!2sus" width="1400" height="600"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div className="embeded-map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.63572751083!2d73.07903012566814!3d33.650127545155634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df952e017d0acd%3A0xf20be4a76782ceaf!2sPir%20Mehr%20Ali%20Shah%20Arid%20Agriculture%20University%20-%20PMAS%20AAUR!5e0!3m2!1sen!2sus!4v1666956975991!5m2!1sen!2sus" width="100%" height="600"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
 </div>
   )
 }

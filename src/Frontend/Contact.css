@@ -1,7 +1,9 @@
 .contact-section {
     padding: 50px;
     text-align: center;
-    background-color: #0d6efd;
+    /* background-color: #0d6efd; */
+    background-image: linear-gradient(to right, #0d6efd , #5ae8a6);
+
     color: white;
 }
 
@@ -46,7 +48,10 @@ textarea {
     /* background-color: #f2f2f2; */
     /* padding: 50px; */
 }
-
+.embeded-map{
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 900px) {
     .contact-row {
         grid-template-columns: repeat(1, 1fr);

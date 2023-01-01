@@ -1,4 +1,5 @@
 import React from 'react'
+import logo  from '../Images/logo.png'
 import './Header.css';
 import {
   Link,
@@ -11,7 +12,9 @@ const Header = () => {
         
 <nav className=" navbar navbar-expand-lg" >
   <div className=" container-fluid">
-    <Link className="navbar-brand " to="/">Emo Place</Link>
+    <Link className="navbar-brand " to="/">
+      <img className="img-logo" height="50px" src={logo} alt="Mint Block Logo"/>
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

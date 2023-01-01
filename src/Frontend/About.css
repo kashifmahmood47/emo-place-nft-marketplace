@@ -32,7 +32,9 @@ h2.about-main-head {
 .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #0d6efd;
+    /* background-color: #0d6efd; */
+    background-image: linear-gradient(to right, #0d6efd , #5ae8a6);
+
     color: white;
 }
 

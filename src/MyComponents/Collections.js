@@ -4,7 +4,7 @@ import './Collections.css'
 const FeaturedCollections = () => {
   return (
     <div className="container">
-     <h2 className="featured-collection-main-title">Featured <b>Collections</b></h2>
+     <h2 className="featured-collection-main-title">Industries <b>We Cover</b></h2>
      <div className="fc-list">
          <div className="fc-list-p fc-list-p1">
              <h3>Games</h3>

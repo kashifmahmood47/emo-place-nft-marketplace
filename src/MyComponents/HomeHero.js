@@ -18,7 +18,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className="home-hero-section-p home-hero-section-p2">
-                        <img height="700px" src={HomeHeroImage} alt="Hero Image" />
+                        <img  src={HomeHeroImage} alt="Hero Image" />
                     </div>
                 </div>
             </section>

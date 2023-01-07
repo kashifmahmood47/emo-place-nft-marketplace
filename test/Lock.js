@@ -11,6 +11,7 @@ describe("NFTMarket", function() {
     const NFTMarketplace = await ethers.getContractFactory("NFTMarketplace")
     const nftMarketplace = await NFTMarketplace.deploy()
     await nftMarketplace.deployed()
+    
 
     let listingPrice = await nftMarketplace.getListingPrice()
     listingPrice = listingPrice.toString()
@@ -20,7 +21,8 @@ describe("NFTMarket", function() {
     /* create two tokens */
     await nftMarketplace.createToken("https://www.mytokenlocation.com", auctionPrice, { value: listingPrice })
     await nftMarketplace.createToken("https://www.mytokenlocation2.com", auctionPrice, { value: listingPrice })
-      
+   
+   
     const [_, buyerAddress] = await ethers.getSigners()
   
     /* execute sale of token to another user */
